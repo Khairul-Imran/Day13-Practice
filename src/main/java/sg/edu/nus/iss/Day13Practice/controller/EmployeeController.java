@@ -3,6 +3,8 @@ package sg.edu.nus.iss.Day13Practice.controller;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+import javax.naming.Binding;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -76,8 +78,19 @@ public class EmployeeController {
 
     Employee employee = employeeRepo.findByEmail(email);
     model.addAttribute("employee", employee);
-    
+
     return "employeeupdate";
+  }
+
+  @PostMapping("/updEmployee")
+  public String updateEmployeeRecord(@ModelAttribute("employee") Employee employee, BindingResult result, Model model) {
+
+    if (result.hasErrors()) {
+      return "employeeupdate";
+    }
+
+    employeeRepo.updateEmployee(employee);
+    return "redirect:/employees/list";
   }
   
 }

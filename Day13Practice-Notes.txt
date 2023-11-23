@@ -14,3 +14,9 @@ Hyperlink references are always GET requests -> going to the endpoint to fetch s
 
 
 Refer to their solutions
+
+
+Read more about HTTP sessions, see slides and online.
+
+Model -> lasts as long as the method itself (till the method completes)
+Session -> is preserved until the session ends. (can invalidate or timeout)

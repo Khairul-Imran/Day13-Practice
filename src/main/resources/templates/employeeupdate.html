@@ -13,7 +13,7 @@
   <div class="container">
     <a th:href="@{/employees/list}" class="btn btn-primary">Back to Employee Listing</a>
     <br><br>
-    <h1>Add New Employee</h1>
+    <h1>Update Employee</h1>
     <hr>
     <!--saveEmployee changed to updemployee-->
     <form method="POST" th:action="@{/employees/updemployee}" th:object="${employee}" > <!--Put everything as an object, and return as object (instead of url encoded)-->
