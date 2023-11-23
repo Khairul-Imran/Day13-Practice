@@ -1,0 +1,5 @@
+------------------------------------------------Practice------------------------------------------------
+
+1. Create all the 4 folders -controller, repo, model, service
+2. Start by creating the object model (Employee), with all its properties and validations
+3. 
