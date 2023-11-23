@@ -1,5 +1,16 @@
 ------------------------------------------------Practice------------------------------------------------
+This practice is about reading data from a file.
 
 1. Create all the 4 folders -controller, repo, model, service
 2. Start by creating the object model (Employee), with all its properties and validations
-3. 
+3. Created an EmployeeRepo
+4. Created an EmployeeController
+5. Created the form in the template -> follow the same sequence he did.
+
+Command when writing the data:
+mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/khairulimran/data"
+
+Hyperlink references are always GET requests -> going to the endpoint to fetch something.
+
+
+Refer to their solutions
