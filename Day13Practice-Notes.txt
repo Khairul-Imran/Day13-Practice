@@ -1,5 +1,6 @@
 ------------------------------------------------Practice------------------------------------------------
 This practice is about reading data from a file.
+Also about creating a employee list, and htmlsession.
 
 1. Create all the 4 folders -controller, repo, model, service
 2. Start by creating the object model (Employee), with all its properties and validations
