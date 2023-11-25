@@ -30,10 +30,6 @@ public class Day13PracticeApplication implements ApplicationRunner{
 			} else {
 				System.out.println(fileDir.getAbsolutePath()); // Not sure what this does.
 			}
-
 		}
-
-
 	}
-
 }

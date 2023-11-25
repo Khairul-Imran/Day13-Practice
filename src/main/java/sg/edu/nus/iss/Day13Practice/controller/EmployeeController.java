@@ -45,21 +45,16 @@ public class EmployeeController {
   }
 
 
-  @PostMapping("/saveEmployee")
-  public String saveEmployee(@Valid @ModelAttribute("employee") Employee employeeForm, BindingResult result, Model model) throws FileNotFoundException { // This sequence is important.... allows you to pass an entire object.
-    // Result is the result in the form.
-    // Valid is for validating the parameter (according to the Employee model) you received before using it.
-    // ModelAtribute -> take the attribute "employee", and place it inside the employee form
-    // Model allows you to keep passing the obj to another form if needed.
+  @PostMapping("/saveEmployee") // This sequence is important in allowing you to pass an entire object.
+  public String saveEmployee(@Valid @ModelAttribute("employee") Employee employeeForm, BindingResult result, Model model) throws FileNotFoundException {
 
-    // Detect if there is an error.
     if(result.hasErrors()) {
-      return "employeeadd"; // Stays at the same page if there is an error.
+      return "employeeadd"; // Stays at the same page.
     }
 
     Boolean returnResult = employeeRepo.save(employeeForm);
 
-    //return "redirect:/employees/list"; // "/employees/list" is a controller endpoint.
+    //return "redirect:/employees/list"; // -> This is an alternative template page you could direct to.
     model.addAttribute("savedEmployee", employeeForm);
     return "success";
   }

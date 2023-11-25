@@ -7,6 +7,8 @@ Also about creating a employee list, and htmlsession.
 3. Created an EmployeeRepo
 4. Created an EmployeeController
 5. Created the form in the template -> follow the same sequence he did.
+6. Created the HomeController
+
 
 Command when writing the data:
 mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/khairulimran/data"

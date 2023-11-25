@@ -53,11 +53,7 @@ public class HomeController {
 
     model.addAttribute("SessionData", "There is no session object now.");
     
-
     return "pagea";
     // return "redirect:/home/pagea";
-
   }
-
-
 }
