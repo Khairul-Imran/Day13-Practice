@@ -36,7 +36,7 @@ public class HomeController {
 
     model.addAttribute("myName", session.getAttribute("myFullName").toString());
 
-    return "pageb"; // Create a page b html page, and a controller for pageb -> read a value from the session
+    return "pageb";
   }
   
   @GetMapping("/pageb")
